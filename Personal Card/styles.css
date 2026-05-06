@@ -1,0 +1,113 @@
+body {
+  margin: 20px;
+  /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+
+  /* STRETCH GOAL: Border Radius */
+  border-radius: 50%; /* Membuat gambar jadi bulat sempurna */
+  border: 4px solid #fff; /* Bingkai putih estetik di sekeliling foto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: left;
+  background: #ddebf8;
+  color: #2b2839;
+
+  border-radius: 15px;
+  border-bottom: 6px solid #d8cefe;
+
+  /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+  /* Persiapan untuk animasi hover */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  /* STRETCH GOAL 🤯🤯🤯: Animations */
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.border-blue {
+  border: 1px dotted blue;
+}
+
+.card:hover {
+  transform: translateY(
+    -10px
+  ); /* Efek kartu terangkat ke atas saat kursor mendekat */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); /* Bayangan membesar saat terangkat */
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Jarak rapi antar baris teks */
+}
+
+h3,
+h4,
+p {
+  margin: 0; /* Mereset margin bawaan browser */
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: #5a5766;
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #7b788a;
+}
+
+/* STRETCH GOAL 🤯🤯🤯: Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    margin-top: 60px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
