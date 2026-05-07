@@ -53,5 +53,3 @@ space/
 Project ini adalah bagian dari Scrimba Fullstack Mini Projects - sebuah mini project untuk mempelajari dasar-dasar web development dengan fokus pada HTML, CSS, dan UI/UX design.
 
 ---
-
-_Made with ✨ for learning purposes_
