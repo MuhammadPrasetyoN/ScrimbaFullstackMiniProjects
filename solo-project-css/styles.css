@@ -1,0 +1,157 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 100px;
+}
+
+#hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.38)),
+    url("./images/torshov.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 340px;
+  padding: 24px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+#nama-kota {
+  margin: 0;
+  padding: 8px 18px;
+  background-color: #1d3557;
+  color: #f1faee;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+#deskripsi-kota {
+  margin: 0;
+  max-width: 640px;
+  padding: 10px 16px;
+  background-color: #457b9d;
+  color: #f1faee;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+#activities {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #a8dadc;
+}
+
+#activities h3 {
+  margin: 0 0 30px 0;
+  color: #1d3557;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#top-three {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.activity-card {
+  text-align: center;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  img {
+    filter: brightness(1.1);
+    transition: filter 0.3s ease;
+  }
+}
+
+.activity-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.activity-card h4 {
+  margin: 12px 0 8px 0;
+  color: #1d3557;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.activity-card p {
+  margin: 0;
+  color: #1d3557;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  #hero {
+    min-height: 360px;
+    padding: 18px 14px;
+  }
+
+  #nama-kota {
+    font-size: 1.6rem;
+  }
+
+  #deskripsi-kota {
+    font-size: 0.95rem;
+  }
+
+  #activities {
+    padding: 30px 16px;
+  }
+
+  #activities h3 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+
+  #top-three {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .activity-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .activity-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .activity-card p {
+    font-size: 0.8rem;
+  }
+}
