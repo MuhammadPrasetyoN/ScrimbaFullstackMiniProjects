@@ -114,6 +114,59 @@ img {
   line-height: 1.4;
 }
 
+#guide-card {
+  width: 400px;
+  margin: 10px auto;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: left;
+  background: #ddebf8;
+  color: #2b2839;
+
+  border-radius: 12px;
+  border-bottom: 8px solid #1d3557;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#avatar {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.information-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  min-height: 180px;
+}
+
+.information-card h3,
+.information-card p,
+.information-card h4 {
+  margin: 0;
+
+  text-align: center;
+}
+
+.information-card h3 {
+  font-size: 1.7rem;
+  color: #1d3557;
+}
+
+#guide-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 640px) {
   #hero {
     min-height: 360px;
@@ -153,5 +206,46 @@ img {
 
   .activity-card p {
     font-size: 0.8rem;
+  }
+
+  #guide {
+    padding: 30px 16px;
+  }
+
+  #guide-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  #avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 6px;
+  }
+
+  .information-card {
+    gap: 8px;
+    min-height: auto;
+  }
+
+  .information-card h3,
+  .information-card p,
+  .information-card h4 {
+    margin: 0;
+  }
+
+  .information-card h3 {
+    font-size: 1rem;
+  }
+
+  .information-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .information-card h4 {
+    font-size: 0.9rem;
   }
 }
