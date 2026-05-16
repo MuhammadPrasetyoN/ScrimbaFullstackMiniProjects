@@ -34,6 +34,17 @@ img {
   gap: 12px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    margin-top: 60px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
 #nama-kota {
   margin: 0;
   padding: 8px 18px;
@@ -43,6 +54,9 @@ img {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.15;
+
+  /* STRETCH GOAL 🤯🤯🤯: Animations */
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 #deskripsi-kota {
@@ -55,6 +69,9 @@ img {
   font-size: 1.05rem;
   font-weight: 600;
   line-height: 1.35;
+
+  /* STRETCH GOAL 🤯🤯🤯: Animations */
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 #activities {
