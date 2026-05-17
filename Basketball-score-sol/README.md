@@ -30,6 +30,10 @@ python -m http.server 8000
 npx http-server
 ```
 
+## 📸 Final Result
+
+![Basketball Score Tracker](./ss/Screenshot%20basketball-project.png)
+
 ## 📖 How to Use
 
 1. **Add Points**: Click the `+1`, `+2`, or `+3` buttons under HOME or GUEST to increase their score
