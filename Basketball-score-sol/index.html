@@ -9,8 +9,19 @@
 
   <body>
     <div class="wrapper">
+      <!-- Period Display -->
+      <div class="period-display">
+        <div class="period-info">
+          <span>Period:</span>
+          <span id="period" class="period-number">1</span>
+        </div>
+        <button class="button-period" onclick="nextPeriod()">
+          Next Period
+        </button>
+      </div>
+
       <div class="container">
-        <div class="team">
+        <div class="team" id="home-team">
           <h3 class="main-text">HOME</h3>
           <p class="point-text" id="home-point">0</p>
           <div class="buttons-group">
@@ -18,14 +29,39 @@
             <button class="button-score" onclick="incrementHome(2)">+2</button>
             <button class="button-score" onclick="incrementHome(3)">+3</button>
           </div>
+          <div class="stats-group">
+            <div class="stat-item">
+              <span class="stat-label">Fouls:</span>
+              <button class="button-stat" onclick="incrementHomeFouls()">
+                +
+              </button>
+              <span id="home-fouls" class="stat-value">0</span>
+              <button class="button-stat" onclick="decrementHomeFouls()">
+                −
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="team">
+
+        <div class="team" id="guest-team">
           <h3 class="main-text">GUEST</h3>
           <p class="point-text" id="guest-point">0</p>
           <div class="buttons-group">
             <button class="button-score" onclick="incrementGuest(1)">+1</button>
             <button class="button-score" onclick="incrementGuest(2)">+2</button>
             <button class="button-score" onclick="incrementGuest(3)">+3</button>
+          </div>
+          <div class="stats-group">
+            <div class="stat-item">
+              <span class="stat-label">Fouls:</span>
+              <button class="button-stat" onclick="incrementGuestFouls()">
+                +
+              </button>
+              <span id="guest-fouls" class="stat-value">0</span>
+              <button class="button-stat" onclick="decrementGuestFouls()">
+                −
+              </button>
+            </div>
           </div>
         </div>
       </div>
