@@ -1,0 +1,82 @@
+body {
+  background-color: #111827;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #1f2937;
+  padding: 2rem;
+  border: 3px solid #e5e7eb;
+  border-radius: 0.5rem;
+  max-width: 450px;
+  width: 100%;
+}
+
+.title {
+  color: #e5e7eb;
+  font-size: 32px;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.highlight {
+  color: #4ad66d;
+}
+
+.description {
+  color: #e5e7eb;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+.gen-btn {
+  background-color: #4ad66d;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.gen-btn:hover {
+  background-color: #3cb85c;
+  transform: scale(1.05);
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #4b5563;
+  margin: 30px 0;
+}
+
+.passwords-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.password-box {
+  background-color: #273549;
+  color: #55f9e1;
+  flex: 1;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 16px;
+  letter-spacing: 0, 5px;
+  cursor: pointer;
+}
