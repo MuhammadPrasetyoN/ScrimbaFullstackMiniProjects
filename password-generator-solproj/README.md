@@ -1,6 +1,14 @@
 # Password Generator
 
-A simple password generator built as part of a Scrimba solo project. The app creates two random passwords at once so users can quickly copy or compare strong options without extra steps.
+A lightweight password generator built as part of a Scrimba solo project. The application generates two secure password candidates at once, making it easy to compare, copy, and use strong passwords without extra steps.
+
+## Live Demo
+
+- https://pass-gen-kyu.netlify.app/
+
+## Security Note
+
+This project is a static frontend app. It does not collect, store, or transmit user data, and it does not use a backend, database, or authentication flow. Because of that, there is no sensitive data handled by the app itself.
 
 ## About the Project
 
@@ -8,10 +16,11 @@ This project focuses on core JavaScript logic and a clean, minimal UI. It was bu
 
 ## Features
 
-- Generates 2 random passwords with one click
-- Uses a 15-character password length
-- Includes uppercase letters, lowercase letters, numbers, and symbols
-- Clean layout with a dark theme and clear visual hierarchy
+- Generates two random passwords with one click
+- Supports adjustable password length
+- Includes toggles for numbers and symbols
+- Allows one-click copy by clicking a generated password
+- Uses a dark, accessible layout with clear visual hierarchy
 
 ## Stretch Goals Implemented
 
@@ -20,7 +29,7 @@ This project focuses on core JavaScript logic and a clean, minimal UI. It was bu
 - Toggle symbols on or off
 - Click any generated password to copy it to the clipboard
 
-## Built With
+## Tech Stack
 
 - HTML
 - CSS
@@ -29,8 +38,10 @@ This project focuses on core JavaScript logic and a clean, minimal UI. It was bu
 ## How to Use
 
 1. Open `index.html` in your browser.
-2. Click the Generate Passwords button.
-3. Copy the generated passwords and use the one you prefer.
+2. Set the desired password length.
+3. Choose whether to include numbers and symbols.
+4. Click Generate Passwords.
+5. Click a generated password to copy it to the clipboard.
 
 ## Screenshot Comparison
 
@@ -42,7 +53,13 @@ This project focuses on core JavaScript logic and a clean, minimal UI. It was bu
 
 ![Password Generator latest preview](ss/pass-gen-2.png)
 
-The latest version includes the stretch goals shown in the updated UI, including password length control, number and symbol toggles, and copy-on-click behavior.
+The latest version includes the implemented stretch goals shown in the updated UI, including password length control, number and symbol toggles, and copy-on-click behavior.
+
+## Project Highlights
+
+- Focused, single-purpose utility app
+- Clear UI progression from the original Scrimba challenge to the enhanced version
+- Suitable for portfolio presentation as a small but complete frontend project
 
 ## Folder Structure
 
@@ -58,4 +75,4 @@ password-generator-solproj/
 
 ## Notes
 
-This project is based on Scrimba's frontend learning path and is intended as a compact demo of a useful utility app.
+This project is based on Scrimba's frontend learning path and is intended as a compact demo of a practical utility app.
