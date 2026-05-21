@@ -18,9 +18,35 @@
         Generate a <br /><span class="highlight">Secure Random Password</span>
       </h1>
       <p class="description">Never use an insecure password again.</p>
-      <button class="gen-btn" onclick="generatePasswords()">
+      <div class="controls">
+        <label class="control-row">
+          <span class="control-label">Password length</span>
+          <input
+            id="password-length"
+            class="length-input"
+            type="number"
+            min="8"
+            max="24"
+            value="15"
+          />
+        </label>
+
+        <div class="toggle-group" aria-label="Password options">
+          <label class="option">
+            <input id="include-numbers" type="checkbox" checked />
+            <span>Include numbers</span>
+          </label>
+          <label class="option">
+            <input id="include-symbols" type="checkbox" checked />
+            <span>Include symbols</span>
+          </label>
+        </div>
+      </div>
+
+      <button id="generate-btn" class="gen-btn">
         Generate Passwords
       </button>
+      <p id="status-message" class="status" aria-live="polite"></p>
       <hr class="divider" />
       <div class="passwords-container">
         <div id="password-one" class="password-box"></div>

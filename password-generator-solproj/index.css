@@ -38,6 +38,63 @@ body {
   font-weight: 400;
 }
 
+.controls {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.control-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  color: #e5e7eb;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.control-label {
+  color: #cbd5e1;
+}
+
+.length-input {
+  width: 92px;
+  background-color: #111827;
+  color: #e5e7eb;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.length-input:focus {
+  outline: 2px solid #4ad66d;
+  outline-offset: 2px;
+}
+
+.toggle-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.option {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #e5e7eb;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.option input {
+  width: 16px;
+  height: 16px;
+  accent-color: #4ad66d;
+}
+
 .gen-btn {
   background-color: #4ad66d;
   color: #ffffff;
@@ -52,6 +109,13 @@ body {
 .gen-btn:hover {
   background-color: #3cb85c;
   transform: scale(1.05);
+}
+
+.status {
+  min-height: 1.25rem;
+  margin: 0;
+  color: #9ca3af;
+  font-size: 14px;
 }
 
 .divider {
@@ -79,4 +143,13 @@ body {
   font-size: 16px;
   letter-spacing: 0, 5px;
   cursor: pointer;
+  user-select: all;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.password-box:hover {
+  background-color: #2e415c;
+  transform: translateY(-1px);
 }
